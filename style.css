@@ -924,54 +924,55 @@ html, body {
 @media(max-width: 900px) {
 
     .nav-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+    display: flex;
+    flex-direction: row;              /* ✅ side by side */
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
+nav {
+    display: flex;
+    align-items: center;
+}
 
-    .nav-links li a {
-        font-size: 14px;
-        padding: 5px;
-    }
+.logo {
+    font-size: 22px;
+}
 
-     nav {
-        width: 100%;
-    }
+/* Hamburger icon */
+.hamburger {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
 
-    .hamburger {
-        display: block;
-        text-align: right;
-    }
+/* Hidden menu */
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0b0b0b;
+    flex-direction: column;
+    text-align: center;
+    border-top: 1px solid #222;
+    padding: 10px 0;
+}
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-        background: #0b0b0b;
-        border-top: 1px solid #222;
-        padding: 10px 0;
-    }
+.nav-links li {
+    padding: 10px 0;
+}
 
-    .nav-links li {
-        text-align: center;
-        padding: 8px 0;
-    }
+.nav-links li a {
+    font-size: 15px;
+}
 
-    .nav-links li a {
-        font-size: 15px;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
+/* Show menu on click */
+.nav-links.show {
+    display: flex;
+}
 
     .hero h1 {
         font-size: 35px;
