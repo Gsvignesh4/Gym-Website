@@ -1,3 +1,8 @@
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("show");
+}
+
+
 /*PRICING */
 function selectPlan(planName) {
     localStorage.setItem("selectedPlan", planName);

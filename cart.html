@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart | PrimeFit Arena</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,14 +11,23 @@
 <header class="navbar">
     <div class="container nav-content">
         <div class="logo">PrimeFit <span>Arena</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a class="active" href="cart.html">Cart</a></li>
-        </ul>
+
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
+
 
 <section class="cart-section">
     <h1 class="section-title">Your Cart</h1>
