@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart | PrimeFit Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">PrimeFit <span>Arena</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a class="active" href="cart.html">Cart</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="cart-section">
+    <h1 class="section-title">Your Cart</h1>
+
+    <!-- CART ITEMS -->
+    <div id="cartItems" class="cart-container">
+        <!-- JS will insert cart items here -->
+    </div>
+
+    <!-- TOTAL AMOUNT -->
+    <h2 id="cartTotal" style="margin-top:20px; color:orange; text-align:center;"></h2>
+
+    <!-- ACTION BUTTONS -->
+    <div class="cart-actions">
+        <button class="btn" onclick="buyNow()">Buy Now</button>
+        <button class="btn" onclick="clearCart()">Clear Cart</button>
+    </div>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

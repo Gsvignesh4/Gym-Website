@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store | PrimeFit Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">PrimeFit <span>Arena</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="active" href="store.html">Store</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="pricing-section">
+    <h1 class="section-title">Gym Supplements Store</h1>
+
+    <div class="pricing-grid">
+
+        <div class="pricing-card">
+            <img src="gal/whey.jpg" class="product-img">
+            <h2>Whey Protein</h2>
+            <p class="price">₹2499</p>
+            <button class="btn"
+                onclick="addToCart('Whey Protein', 2499, 'gal/whey.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="gal/creatine.jpg" class="product-img">
+            <h2>Creatine</h2>
+            <p class="price">₹1299</p>
+            <button class="btn"
+                onclick="addToCart('Creatine', 1299, 'gal/creatine.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="gal/gloves.jpg" class="product-img">
+            <h2>Gym Gloves</h2>
+            <p class="price">₹799</p>
+            <button class="btn"
+                onclick="addToCart('Gym Gloves', 799, 'gal/gloves.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="gal/gloves2.jpg" class="product-img">
+            <h2>Gym Gloves</h2>
+            <p class="price">₹699</p>
+            <button class="btn"
+                onclick="addToCart('Gym Gloves', 799, 'gal/gloves2.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="gal/shaker.jpg" class="product-img">
+            <h2>Protein Shaker Bottle</h2>
+            <p class="price">₹399</p>
+            <button class="btn"
+                onclick="addToCart('Protein Shaker Bottle', 399, 'gal/shaker.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

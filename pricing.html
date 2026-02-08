@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | PrimeFit Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">PrimeFit <span>Arena</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="store.html">Store</a></li>
+                     <li><a href="cart.html">Cart</a></li>
+                    <li><a class="active" href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- PRICING SECTION -->
+    <section class="pricing-section">
+        <h1 class="section-title">Membership Plans</h1>
+
+        <p class="pricing-subtext">
+            Choose a plan that fits your fitness journey. All memberships include trainer support and gym access.
+        </p>
+
+        <div class="pricing-grid">
+
+            <!-- BASIC PLAN -->
+            <div class="pricing-card">
+                <h2>Basic</h2>
+                <p class="price">₹799 / month</p>
+                <ul>
+                    <li>✔ Gym Access</li>
+                    <li>✔ Cardio Zone</li>
+                    <li>✔ Locker Facility</li>
+                    <li>✖ Personal Trainer</li>
+                </ul>
+                <button class="btn pay-btn" onclick="selectPlan('Basic Membership')">Pay Now</button>
+            </div>
+
+            <!-- STANDARD PLAN -->
+            <div class="pricing-card popular">
+                <div class="tag">Popular</div>
+                <h2>Standard</h2>
+                <p class="price">₹1299 / month</p>
+                <ul>
+                    <li>✔ Gym Access</li>
+                    <li>✔ Cardio & Strength Zone</li>
+                    <li>✔ Group Fitness Classes</li>
+                    <li>✔ Locker Facility</li>
+                </ul>
+                <button class="btn pay-btn" onclick="selectPlan('Standard Membership')">Pay Now</button>
+            </div>
+
+            <!-- PREMIUM PLAN -->
+            <div class="pricing-card">
+                <h2>Premium</h2>
+                <p class="price">₹1999 / month</p>
+                <ul>
+                    <li>✔ All Standard Benefits</li>
+                    <li>✔ Personal Trainer</li>
+                    <li>✔ Diet & Nutrition Plan</li>
+                    <li>✔ Priority Access</li>
+                </ul>
+                <button class="btn pay-btn" onclick="selectPlan('Premium Membership')">Pay Now</button>
+            </div>
+
+        </div>
+
+
+        <!-- COMPARISON TABLE -->
+        <h2 class="section-title" style="margin-top: 50px;">Compare Plans</h2>
+
+        <table class="pricing-table">
+            <tr>
+                <th>Features</th>
+                <th>Basic</th>
+                <th>Standard</th>
+                <th>Premium</th>
+            </tr>
+            <tr>
+                <td>Gym Access</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>Cardio Zone</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>Strength Zone</td>
+                <td>✖</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>Personal Trainer</td>
+                <td>✖</td>
+                <td>✖</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>Diet Plan</td>
+                <td>✖</td>
+                <td>✖</td>
+                <td>✔</td>
+            </tr>
+        </table>
+
+
+        <!-- FAQ SECTION -->
+        <section class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+
+            <div class="faq-box">
+                <h3>1. Do memberships include trainer support?</h3>
+                <p>Yes, all plans include basic trainer assistance. Premium gives personal trainer access.</p>
+            </div>
+
+            <div class="faq-box">
+                <h3>2. Can I upgrade my plan later?</h3>
+                <p>Yes, you can upgrade anytime by paying the difference amount.</p>
+            </div>
+
+            <div class="faq-box">
+                <h3>3. Are diet plans included?</h3>
+                <p>Diet plans are included only in the Premium Membership.</p>
+            </div>
+
+            <div class="faq-box">
+                <h3>4. Do you have female trainers?</h3>
+                <p>Yes, we have certified male and female coaches available.</p>
+            </div>
+        </section>
+
+    </section>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 PrimeFit Arena. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
